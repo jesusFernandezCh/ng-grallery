@@ -1,0 +1,11 @@
+<div *ngIf="selectedImage">
+  <div class="container image-detail">
+    <div class="row">
+      <div class="col-md-6"><img [src]= "selectedImage.imageLink" alt="" class="img-responsive"></div>
+      <div class="col-md-6">
+        <h1 class="text-info">{{ selectedImage.title }}</h1>
+        <p class="text-justify">{{ selectedImage.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>
